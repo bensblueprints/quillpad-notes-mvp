@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'unsafe-inline'" />
+  <title>Quick capture</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: #14161c;
+      color: #d7dae2;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 14px 16px;
+      border: 1px solid #262a35;
+      border-radius: 10px;
+      overflow: hidden;
+      -webkit-app-region: drag;
+    }
+    .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .title { font-size: 12.5px; font-weight: 600; color: #8b90a0; letter-spacing: 0.4px; }
+    .hint { font-size: 11px; color: #5c6272; }
+    textarea {
+      -webkit-app-region: no-drag;
+      flex: 1;
+      background: #1a1d25;
+      border: 1px solid #262a35;
+      border-radius: 8px;
+      color: #d7dae2;
+      font-family: inherit;
+      font-size: 14px;
+      padding: 10px 12px;
+      resize: none;
+      outline: none;
+    }
+    textarea:focus { border-color: #8b7cf6; }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <span class="title">🪶 Quick capture → inbox.md</span>
+    <span class="hint">Enter to save · Esc to cancel</span>
+  </div>
+  <textarea id="capture-text" placeholder="Jot it down…" autofocus></textarea>
+  <script src="capture.js"></script>
+</body>
+</html>

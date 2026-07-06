@@ -1,0 +1,52 @@
+{
+  "name": "quillpad",
+  "productName": "Quillpad",
+  "version": "1.0.0",
+  "description": "Local-first markdown notes. Your notes are plain .md files you own — wikilinks, backlinks, tags, daily notes, no subscription.",
+  "main": "src/main.js",
+  "author": "Ben (bensblueprints)",
+  "license": "MIT",
+  "scripts": {
+    "build:renderer": "esbuild src/renderer/app.js --bundle --outfile=src/renderer/dist/bundle.js --format=iife --minify",
+    "start": "npm run build:renderer && electron .",
+    "test": "node test/smoke.js",
+    "dist": "npm run build:renderer && electron-builder"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.18.0",
+    "@codemirror/commands": "^6.6.0",
+    "@codemirror/lang-markdown": "^6.3.0",
+    "@codemirror/language": "^6.10.0",
+    "@codemirror/state": "^6.4.0",
+    "@codemirror/view": "^6.34.0",
+    "@lezer/highlight": "^1.2.0",
+    "marked": "^12.0.0"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.0",
+    "esbuild": "^0.21.0"
+  },
+  "build": {
+    "appId": "com.bensblueprints.quillpad",
+    "productName": "Quillpad",
+    "files": [
+      "src/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}
