@@ -65,7 +65,7 @@ Build a Windows installer: `npm run dist`. Run the test suite: `npm test`.
 
 The source is free (MIT) and always will be. If you'd rather skip Node/npm and get a signed one-click Windows installer with auto-updates:
 
-**→ [Get Quillpad on Whop — $29, yours forever](https://whop.com/onetime-suite)**
+**→ [Get Quillpad on Whop — $29, yours forever](https://whop.com/benjisaiempire/quillpad)**
 
 ## Tech stack
 
