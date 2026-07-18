@@ -1,5 +1,9 @@
 # 🪶 Quillpad
 
+## Demo
+
+VIDEO-PLACEHOLDER
+
 **Local-first markdown notes. Your notes are plain `.md` files you own.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-8b7cf6.svg)](LICENSE)
