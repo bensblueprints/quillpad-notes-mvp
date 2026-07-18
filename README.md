@@ -2,7 +2,11 @@
 
 ## Demo
 
-VIDEO-PLACEHOLDER
+
+
+https://github.com/user-attachments/assets/cadb22f9-e261-47df-a4fd-b0008cf72b43
+
+
 
 **Local-first markdown notes. Your notes are plain `.md` files you own.**
 
